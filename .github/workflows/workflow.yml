@@ -1,6 +1,8 @@
 name: Publish Python 🐍 distribution 📦 to PyPI and TestPyPI
 
-on: push
+on:
+  release:
+    types: [published]
 
 jobs:
   build:
@@ -8,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       id-token: write
+      contents: read
     steps:
       - uses: actions/checkout@v4
         with:
@@ -24,8 +27,5 @@ jobs:
           --user
       - name: Build a binary wheel and a source tarball
         run: python3 -m build
-      - name: Store the distribution packages
-        uses: actions/upload-artifact@v4
-        with:
-          name: python-package-distributions
-          path: dist/
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
