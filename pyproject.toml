@@ -8,7 +8,7 @@ description = "Damm, Luhn and Verhoeff algorithms"
 readme = "README.md"
 requires-python = ">=3.9"
 classifiers = [
-    "Software Development :: Libraries"
+    "Topic :: Software Development :: Libraries :: Python Modules"
 ]
 license = "MIT"
 license-files = ["LICEN[CS]E*"]
