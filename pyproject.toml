@@ -1,5 +1,5 @@
 [project]
-name = "checkdigit"
+name = "checkdigit-algorithms"
 version = "1.0.0"
 authors = [
     { name="Luis A. Ochoa", email="alberto.0x7c3@gmail.com" }
