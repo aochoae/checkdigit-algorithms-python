@@ -1,5 +1,7 @@
 # Check digit algorithms
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=aochoae_checkdigit-algorithms-python&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=aochoae_checkdigit-algorithms-python)
+
 Algorithms:
 
 * Damm algorithm

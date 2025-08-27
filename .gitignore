@@ -67,3 +67,6 @@ venv.bak/
 
 # PyPI configuration file
 .pypirc
+
+# SonarQube
+.scannerwork/
