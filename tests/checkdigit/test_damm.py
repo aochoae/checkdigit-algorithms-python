@@ -20,7 +20,6 @@ class DammTestCase(unittest.TestCase):
         ("22653775129265104212", "226537751292651042123")
     ])
     def test_generate(self, case, expected):
-        d = damm()
         self.assertEqual(expected, damm.generate(case))
 
     @parameterized.expand([
